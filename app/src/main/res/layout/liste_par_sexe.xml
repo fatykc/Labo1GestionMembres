@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageButton
+        android:id="@+id/imageBListePSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/listeParSexe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageBListePSexe"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Titre5activite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+
+        android:id="@+id/groupR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listeParSexe"
+        android:checkedButton="@id/bRadio2"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+
+        >
+
+        <RadioButton
+            android:id="@+id/bRadio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Homme" />
+
+        <RadioButton
+            android:id="@+id/bRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Femme" />
+
+    </RadioGroup>
+
+    <ListView
+
+        android:id="@+id/maListeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/groupR"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="19dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/listeParSexe"
+        android:layout_alignRight="@+id/listeParSexe"
+        android:layout_below="@+id/listeParSexe"
+        android:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+
+</RelativeLayout>

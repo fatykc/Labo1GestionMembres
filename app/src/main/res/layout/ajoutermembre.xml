@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorGreen"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/Bjr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Bonjour"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Pl1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10sp"
+            android:text="Vous êtes bien dans l'inscription"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/Pl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btEnv"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btEnv"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+
+            android:text="du collège Ahuntsic"
+            android:textColor="@android:color/holo_purple"
+            android:textColorLink="@android:color/holo_purple"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enregistrement d'un utilisateur"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btEfface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/btEnv"
+            android:layout_toRightOf="@+id/btEnv"
+            android:text="@string/Effacer" />
+
+        <Button
+            android:id="@+id/btEnv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/Envoyer" />
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:columnCount="2">
+
+            <TextView
+                android:id="@+id/LibNom"
+                android:layout_width="120dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/Nom"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/Snom"
+
+                android:layout_column="1"
+                android:layout_gravity="fill_horizontal"
+
+                android:layout_row="0"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Libprenom"
+                android:layout_width="120dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="@string/Prenom"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/Sprenom"
+
+
+                android:layout_column="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="1"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/LibSexe"
+                android:layout_width="120dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:text="@string/Sexe"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <RadioGroup
+
+                android:id="@+id/groupR"
+                android:layout_column="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="2"
+                android:checkedButton="@id/bRadio2"
+                android:orientation="vertical"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/bRadio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Homme" />
+
+                <RadioButton
+                    android:id="@+id/bRadio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Femme" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/LibFct"
+                android:layout_width="120dp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="@string/fct"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:visibility="visible" />
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/libTypeW"
+                android:layout_width="120dp"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:layout_rowSpan="2"
+                android:text="@string/TypeW"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:columnCount="2">
+
+                <CheckBox
+                    android:id="@+id/tjour"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:checked="false"
+                    android:text="@string/Jour"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/tpart"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:text="@string/TpsPartiel"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/tplein"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="@string/TpsPlein"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/toccas"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:text="@string/Occas"
+                    android:textSize="14sp" />
+
+            </GridLayout>
+
+
+            <TextView
+                android:id="@+id/libcomm"
+                android:layout_width="120dp"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:layout_rowSpan="3"
+                android:text="@string/commentaire"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/SComm"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_column="1"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="6"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:textSize="14sp" />
+
+
+        </GridLayout>
+
+        <ImageButton
+            android:id="@+id/bretour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

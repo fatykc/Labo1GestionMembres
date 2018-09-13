@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Labo1GestionMembres</string>
+    <string name="item1">Ajouter membre</string>
+    <string name="item2">Enregistrer</string>
+    <string name="item3">Lister</string>
+    <string name="item4">Rechercher</string>
+    <string name="item5">Liste par sexe</string>
+    <string name="item6">Lister par sexe féminin et leur fonction</string>
+    <string name="titre">Gestion des membres</string>
+    <string name="Nom">Nom</string>
+    <string name="Prenom">Prénom</string>
+    <string name="Sexe">Sexe</string>
+    <string name="Homme">Homme</string>
+    <string name="Femme">Femme</string>
+    <string name="Envoyer">Envoyer</string>
+    <string name="Effacer">Effacer</string>
+    <string name="TypeW">Type de travail</string>
+    <string name="Jour">Journalier</string>
+    <string name="TpsPartiel">Temps partiel</string>
+    <string name="TpsPlein">Temps plein</string>
+    <string name="Occas">Occasionnel</string>
+    <string name="commentaire">Commentaires</string>
+    <string name="fct">Fonction</string>
+    <string name="Titre2activite">Enregistrement dans un Fichier</string>
+    <string name="Titre3activite">Liste des membres</string>
+    <string name="Titre4activite">Enregistrement dans le Fichier</string>
+    <string name="Titre5activite">Liste des membres par sexe</string>
+    <string name="tab">\u0009</string>
+    <string name="NomCherche">Nom</string>
+    <string name="PrenomChercher">Prénom</string>
+    <string name="Titre6activite">Liste des membres féminins</string>
+    <string name="typeTravail">TypeTravail</string>
+    <string-array name="tablefct">
+
+        <item>Enseignant</item>
+        <item>Etudiant</item>
+        <item>Ingénieur</item>
+        <item>Retraité</item>
+        <item>Autre</item>
+
+
+    </string-array>
+
+</resources>
